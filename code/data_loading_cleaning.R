@@ -1,0 +1,8 @@
+data <- read.csv("Dataset3final.csv", stringsAsFactors = TRUE)
+str(data)
+head(data)
+summary(data)
+colSums(is.na(data))
+data$European.Union.Membership <- as.factor(data$European.Union.Membership)
+data$Currency <- as.factor(data$Currency)
+data$Level.of.development <- as.factor(data$Level.of.development)
